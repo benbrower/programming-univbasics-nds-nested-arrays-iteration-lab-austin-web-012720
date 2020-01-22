@@ -9,7 +9,7 @@ def join_ingredients(src)
   toppings = []
   pair_index = 0
   while pair_index < src.count do
-      toppings << "I love #{src[pair_index][0].to_s} and #{src[pair_index][1].to_s} on my pizza"
+      toppings << "I love #{src[pair_index].first.to_s} and #{src[pair_index].last.to_s} on my pizza"
     pair_index += 1
   end
   toppings
