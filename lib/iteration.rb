@@ -43,8 +43,8 @@ def total_even_pairs(src)
   even_pairs_sum = 0
   pair_index = 0
   while pair_index < src.count do
-    if src[pair_index][0] % 2 == 0 && src[pair_index][1] % 2 == 0
-      even_pairs_sum += src[pair_index].first + src[pair_index].first
+    if src[pair_index].first % 2 == 0 && src[pair_index].first % 2 == 0
+      even_pairs_sum += src[pair_index].first + src[pair_index].last
     end
     pair_index += 1
   end
