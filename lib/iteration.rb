@@ -11,7 +11,7 @@ def join_ingredients(src)
   while row_index < src.count do
     # element_index = 0
     # while element_index < src[row_index].count do
-      toppings << "I love #{src.first.to_s} and #{src.last} on my pizza"
+      toppings << "I love #{src[0].to_s} and #{src.last} on my pizza"
     # end
     row_index += 1
   end
