@@ -40,11 +40,11 @@ def total_even_pairs(src)
   # As a reminder any number % 2 will return 0 or 1. If the result is 0, then
   # the number was even. Review the operator documentation if you've forgotten
   # this!
-  even_pairs_sum = []
+  even_pairs_sum = 0
   pair_index = 0
   while pair_index < src.count do
     if ((src[pair_index].first + src[pair_index].first) % 2 == 0)
-      even_pairs_sum << src[pair_index].first + src[pair_index].first
+      even_pairs_sum += src[pair_index].first + src[pair_index].first
     end
     pair_index += 1
   end
