@@ -22,8 +22,11 @@ def find_greater_pair(src)
   greater_numbers = []
   pair_index = 0
   while pair_index < src.count do
-    src[pair_index].sort
-    greater_numbers << src.last
+    if src[pair_index][0] > src[pair_index][1]
+      greater_numbers << src[pair_index][0]
+    else
+      greater_numbers << src[pair_index][1]
+    end
     pair_index += 1
   end
   greater_numbers
